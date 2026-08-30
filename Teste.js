@@ -1,3 +1,5 @@
+// Local de teste.
+
 let array = [
     { AstroX: "AstroX", AstroY: "AstroY" },
     { Velx: 5.91, AstroX: -5.91 }
