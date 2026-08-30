@@ -3,7 +3,7 @@ const ctx = universe.getContext('2d');
 
 let AstroX = 2000
 let AstroY = 2000
-let VelX = 5.91
+let VelX = 3
 let VelY = -5.91
 
 let BuracoX = 4000
@@ -26,7 +26,7 @@ let Loop = function () {
     AstroX += VelX
     AstroY += VelY
 
-    // Temporário
+
     ctx.clearRect(0, 0, 800, 600)
 
     ctx.fillStyle = 'white';
@@ -41,8 +41,5 @@ let Loop = function () {
 
     requestAnimationFrame(Loop);
 };
-
-
-
 
 Loop();
