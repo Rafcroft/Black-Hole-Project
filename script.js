@@ -26,7 +26,7 @@ let Loop = function () {
     AstroX += VelX
     AstroY += VelY
 
-
+    // Temporário
     ctx.clearRect(0, 0, 800, 600)
 
     ctx.fillStyle = 'white';
