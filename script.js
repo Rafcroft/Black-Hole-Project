@@ -5,8 +5,8 @@ const vCtx = variaveis.getContext('2d');
 
 let AstroX = 2000
 let AstroY = 2000
-let VelX = 3
-let VelY = -5.91
+let VelX = 1
+let VelY = 1.0
 
 let BuracoX = 4000
 let BuracoY = 3000
@@ -75,15 +75,28 @@ let Loop = function () {
 
     vCtx.fillStyle = "white"
     vCtx.font = "90px monospace"
-    vCtx.fillText("Direction:", 5600, 1000)
+    vCtx.fillText("Direction (x): ", 5600, 1000)
 
-    if (VelX > 0) {
+    vCtx.fillStyle = "white"
+    vCtx.font = "90px monospace"
+    vCtx.fillText("Direction (y): ", 5600, 1100)
+
+    if (VelX < 0) {
         vCtx.fillStyle = "white"
         vCtx.font = "200px monospace"
-        vCtx.fillText("⟶", 6000, 1400)
+        vCtx.fillText("⟶", 6400, 1023)
     } else {
         vCtx.font = "200px monospace"
-        vCtx.fillText("⟵", 6000, 1400)
+        vCtx.fillText("⟵", 6400, 1023)
+    }
+
+    if (VelY < 0) {
+        vCtx.fillStyle = "white"
+        vCtx.font = "200px monospace"
+        vCtx.fillText("⟶", 6400, 1123)
+    } else {
+        vCtx.font = "200px monospace"
+        vCtx.fillText("⟵", 6400, 1123)
     }
 
     // ------------------------------
